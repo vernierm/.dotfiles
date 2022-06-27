@@ -31,12 +31,13 @@ setopt PROMPT_SUBST
 PS1='%F{yellow}%n%f@%F{yellow}%m%f %F{red}%/%f$vcs_info_msg_0_ $ '
 
 ### history search
+bindkey "^R" history-incremental-search-backward
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
+bindkey '^[[Z' reverse-menu-complete
 
-### End of lines added by me
-
-
+### aliases
+[[ -f ~/.aliases ]] && source ~/.aliases
 
 ### THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/marin/.sdkman"

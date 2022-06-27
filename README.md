@@ -14,4 +14,6 @@ My simple dot files
 
 2. Create directories and symbolic links
 
+`ln -s ~/.dotfiles/.aliases ~/.aliases`
 `ln -s ~/.dotfiles/.zshrc ~/.zshrc`
+
