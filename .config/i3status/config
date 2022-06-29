@@ -1,0 +1,69 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+	output_format = "i3bar"
+ 	colors = true
+        interval = 5
+	markup = pango
+	color_good = '#9FAF36'
+	color_degraded = '#FFC72E'
+	color_bad = '#E03522'
+}
+
+order += "volume master"
+order += "wireless _first_"
+order += "battery 0"
+order += "load"
+order += "tztime local"
+
+
+volume master {
+        format = "<span background='#202345'> ♪: %volume </span>"
+        format_muted = "♪: muted (%volume)"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}
+
+wireless _first_ {
+        format_up = "<span background='#152A59'> W: (%quality at %essid) %ip </span>"
+        format_down = "W: down"
+}
+
+battery 0 {
+        format = "<span background='#113866'> battery %percentage %remaining </span>"
+}
+
+load {
+        format = "<span background='#014D6D'> cpu %1min </span>"
+}
+
+tztime local {
+        format = "<span background='#137087'> %time </span>"
+	format_time = "%a, %-d %b %Y %H:%M:%S"
+}
+
+ethernet _first_ {
+        # if you use %speed, i3status requires root privileges
+        format_up = "E: %ip (%speed)"
+        format_down = "E: down"
+}
+
+run_watch DHCP {
+        pidfile = "/var/run/dhclient*.pid"
+}
+
+run_watch VPN {
+        pidfile = "/var/run/vpnc/pid"
+}
+
+disk "/" {
+        format = "%avail"
+}
+
