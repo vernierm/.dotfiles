@@ -1,0 +1,28 @@
+! Colors
+URxvt.background:	#1F1D19
+URxvt.foreground:	#DEDEDE
+URxvt.font:		xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
+URxvt.boldFont:		xft:DejaVu Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
+URxvt.scrollBar:	false
+URxvt.saveLines:	65535
+URxvt*colorUL:		yellow
+URxvt*underlineColor:	yellow
+
+! Fake transparency
+URxvt*transparent:	true
+URxvt*shading:		15
+
+! Disable ISO 14755 unicode input so we can use Ctrl-Shift bindings
+URxvt.iso14755:		false
+URxvt.iso14755_52:	false
+
+! Disable Ctrl-Alt-c & Ctrl-Alt-v bindings (optional)
+URxvt.keysym.C-M-c:	builtin-string:
+URxvt.keysym.C-M-v:	builtin-string:
+
+! Bind Ctrl-Shift-c & Ctrl-Shift-v to copy and paste
+! I dont know why, but I needed to use hex keysym values to get it to work
+URxvt.keysym.C-S-0x43:	eval:selection_to_clipboard
+URxvt.keysym.C-S-0x56:	eval:paste_clipboard
+
+     

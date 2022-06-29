@@ -4,7 +4,7 @@ My simple dot files
 
 ### Prerequisites
 
-... TODO
+... TODO: Urxvt, sdkman, zsh, i3
 
 ### Setup
 
