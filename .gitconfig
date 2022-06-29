@@ -1,0 +1,10 @@
+[user]
+	mail = vernier.mt@gmail.com
+	name = vernierm
+	email = verniermt@gmail.com
+[push]
+	default = simple
+[alias]
+	hist = log --all --graph --decorate --oneline
+[core]
+	autocrlf = input
