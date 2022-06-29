@@ -35,3 +35,6 @@ alias pastec='xclip -o -sel clipboard'
 # Lock the screen (when going AFK)
 alias afk="i3lock -c 000000"
 
+# Shortcuts
+alias g="git"
+
