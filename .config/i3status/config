@@ -8,7 +8,7 @@
 
 general {
 	output_format = "i3bar"
- 	colors = true
+	colors = true
         interval = 5
 	markup = pango
 	color_good = '#9FAF36'
@@ -37,7 +37,7 @@ wireless _first_ {
 }
 
 battery 0 {
-        format = "<span background='#113866'> battery %percentage %remaining </span>"
+        format = "<span background='#113866'> ⚡ %percentage %remaining </span>"
 }
 
 load {
