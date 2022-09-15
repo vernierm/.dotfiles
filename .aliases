@@ -37,4 +37,4 @@ alias afk="i3lock -c 000000"
 
 # Shortcuts
 alias g="git"
-
+alias n="urxvt &"
