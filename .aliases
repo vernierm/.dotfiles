@@ -43,3 +43,4 @@ alias n="urxvt &"
 alias gpon="globalprotect connect -p"
 alias gpst="globalprotect show --status"
 alias gpoff="globalprotect disconnect"
+
