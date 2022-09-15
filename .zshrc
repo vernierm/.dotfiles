@@ -39,6 +39,6 @@ bindkey '^[[Z' reverse-menu-complete
 ### aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
-### THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/marin/.sdkman"
-[[ -s "/home/marin/.sdkman/bin/sdkman-init.sh" ]] && source "/home/marin/.sdkman/bin/sdkman-init.sh"
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
