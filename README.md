@@ -4,14 +4,12 @@ My dot files
 
 ### Prerequisites
 
-Download all of following: Urxvt, sdkman, zsh, i3
+Download all following: Urxvt, sdkman, zsh, i3
 
 ### Setup
 
 1. Clone `.dotfiles` repo
-
 `git clone git@github.com:vernierm/.dotfiles.git`
-
 2. Setup aliases `ln -s ~/.dotfiles/.aliases ~/.aliases`
 3. Setup zsh
    1. choose zsh as default shell - see `chsh`
