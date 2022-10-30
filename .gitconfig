@@ -1,7 +1,6 @@
 [user]
-	mail = vernier.mt@gmail.com
+	email = vernier.mt@gmail.com
 	name = vernierm
-	email = verniermt@gmail.com
 [push]
 	default = simple
 [alias]
