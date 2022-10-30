@@ -3,8 +3,10 @@
 My dot files
 
 ### Prerequisites
-
-Download all following: Urxvt, sdkman, zsh, i3
+* rxvt-unicode
+* sdkman
+* zsh
+* i3
 
 ### Setup
 
