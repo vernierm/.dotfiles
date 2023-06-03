@@ -40,6 +40,9 @@ bindkey '^[[Z' reverse-menu-complete
 ### aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
+### environment
+export PATH=$PATH:/usr/local/go/bin
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
